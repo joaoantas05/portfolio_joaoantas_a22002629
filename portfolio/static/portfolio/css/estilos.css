@@ -223,7 +223,29 @@ font-size: 18px;
 /* Competências */
 
 .competencias{
-  float: left;
+  float: center;
+  width: 400px;   height: auto;
+  padding: 25px;  margin: 10px;
+  background-color: white;  
+  border-radius: 10px; /* arredonda os cantos */
+  box-shadow: 5px 5px 15px grey;
+}
+
+/* Línguas */
+
+.linguas{
+  float: center;
+  width: 400px;   height: auto;
+  padding: 25px;  margin: 10px;
+  background-color: white;  
+  border-radius: 10px; /* arredonda os cantos */
+  box-shadow: 5px 5px 15px grey;
+}
+
+/* Hobbies */
+
+.desportos{
+  float: center;
   width: 400px;   height: auto;
   padding: 25px;  margin: 10px;
   background-color: white;  
