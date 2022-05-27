@@ -261,7 +261,7 @@ font-size: 18px;
   padding: 25px 100px; 
   text-align: center;
   font-size: 19px;
-  background-image: url("../images/code.jpeg");
+  background-image: url("../images/code.a67ec195e382.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center ;
@@ -301,7 +301,7 @@ font-size: 18px;
 }
 
 .webs .web_tec{
-  background-image: url("../images/linguagens_background.jpeg");
+  background-image: url("../images/linguagens_background.76dbf18c333d.jpeg");
 }
 
 .web_tec{
@@ -330,7 +330,7 @@ margin-top: 5%;
 /* Notícia */
 
 .webs .web_noticia{
-background-image: url("../images/news_background.jpeg");
+background-image: url("../images/news_background.33ffc373247c.jpeg");
 }
 
 .web_noticia button, .web_noticia button img{
@@ -357,7 +357,7 @@ background-image: url("../images/news_background.jpeg");
 /* Laboratórios */      
 
 .webs .web_lab{
-  background-image: url("../images/labs_background.jpeg");
+  background-image: url("../images/labs_background.43b5fdd55a03.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center ;
@@ -382,7 +382,7 @@ background-image: url("../images/news_background.jpeg");
  /* Quizz */      
 
 .web_quizz{
-  background-image: url("../images/quizz_background.jpeg");
+  background-image: url("../images/quizz_background.fb8d8a343018.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center ;
@@ -395,7 +395,7 @@ background-image: url("../images/news_background.jpeg");
   flex-wrap: wrap;
   justify-content: center;
   width: 100%; height: auto;
-  background-image: url("../images/imagem_blog.jpeg");
+  background-image: url("../images/imagem_blog.56051a87091d.jpeg");
 }
 
 .container button.edit-btn{
@@ -446,7 +446,7 @@ background-image: url("../images/news_background.jpeg");
    height: 90vh;
   padding: 20px;
   font-size: 20px;
-  background-image: url("../images/contactos_background.jpeg");
+  background-image: url("../images/contactos_background.4b7a1cbaef9e.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center ;
