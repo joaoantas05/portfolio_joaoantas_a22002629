@@ -1,0 +1,25 @@
+<!-- projetos.html -->
+
+{% extends 'portfolio/layout.html' %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'portfolio/css/estilos.css' %}">
+{% endblock %}
+
+{% block main %}
+    <div class="projects">
+        {% for projeto in projetos %}
+            <div>
+                <h3>{{projeto.titulo}}</h3>
+                <br>
+                <button><a href="{{projeto.linkgithub}}"><img src="../../static/portfolio/images/{{projeto.imagem}}" width="200"></a></button>
+                <br><br>
+                <p>{{projeto.descricao}}</p>
+                <p><b>Tecnologia(s): </b>{{projeto.tecnologia}}</p>
+                <p><b>Autor(es): </b>{{projeto.participantes}}</p>
+                <p><b>UC: </b>{{projeto.cadeira}}</p>
+                <p><b>Ano: </b>{{projeto.ano}}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

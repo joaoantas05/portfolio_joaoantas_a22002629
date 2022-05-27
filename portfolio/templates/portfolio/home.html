@@ -1,0 +1,45 @@
+<!-- home.html -->
+
+{% extends 'portfolio/layout.html' %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'portfolio/css/estilos.css' %}">
+{% endblock %}
+
+{% block main %}
+    <div class="inicio">
+        <div class="texto">
+            <div>
+                <p>Olá, Bem vindo!</p>
+                <p>Sou o João</p>
+                <p>Estudante de Engenharia Informática</p>
+                <a href="#sobre" class="about">Sobre mim</a>
+                <!--
+                <a href="https://www.linkedin.com/in/joaoantas05/"> {% load static %} <img src="{% static 'portfolio/images/linkedin.png' %}" width="35"></a>
+                <a href="https://github.com/joaoantas22002629/pw-labs-joaoantas-a22002629"> {% load static %} <img src="{% static 'portfolio/images/github.png' %}" width="35"></a>
+                <a href="mailto:joaoisidroantas@gmail.com"> {% load static %} <img src="{% static 'portfolio/images/gmail.png' %}" width="35"></a>
+                -->
+            </div>
+        </div> 
+        <div class="dados">
+            {% load static %}
+            <img src="{% static 'portfolio/images/foto.png' %}" width="450">
+        </div>
+    </div>
+
+    <div class="carta" id="carta">
+        {% load static %}
+        <img src="{% static 'portfolio/images/lusofona.jpg' %}" width="100%">
+        <article>
+            <p>
+                Sou estudante do segundo ano do curso de  Engenharia Informática, tenho muita vontade de aprender com os outros, 
+                contribuir com ideias e compartilhar experiências, ampliando conhecimentos e horizontes nas áreas das novas tecnologias. 
+                Ao longo da minha formação, e de forma a torná-la proveitosa, desenvolvi competências informáticas recorrendo também à auto pesquisa de 
+                novas ferramentas de trabalho, de forma a exponenciar a capacidade de adaptação a diferentes áreas. É minha a intenção de, futuramente, 
+                complementar a minha formação inicial numa área de especialização, provavelmente em segurança informática pois revela-se uma área bastante 
+                apelativa ao trabalho que pretendo desenvolver.
+            </p>
+        </article>
+    </div>
+
+{% endblock %}
