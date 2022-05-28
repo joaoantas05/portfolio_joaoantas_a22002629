@@ -443,7 +443,7 @@ background-image: url("../images/news_background.jpeg");
                                                                     /* Contactos */
 
  .contactos{
-   height: 90vh;
+  height: 100vh;
   padding: 20px;
   font-size: 20px;
   background-image: url("../images/contactos_background.jpeg");
@@ -451,4 +451,8 @@ background-image: url("../images/news_background.jpeg");
   background-size: cover;
   background-position: center ;
   color: #a1d0ff;
+ }
+
+ .contactos .icons{
+ display: flex;
  }
