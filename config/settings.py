@@ -44,8 +44,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'portfolio',
-    'whitenoise.runserver_nostatic',  # novo   
+    'whitenoise.runserver_nostatic',  # novo
+    'cloudinary_storage',
+    'cloudinary',
 ]
+
+CLOUDINARY_STORAGE = {
+  'CLOUD_NAME': "imagens-portfolio",
+  'API_KEY': "221833844744547",
+  'API_SECRET': "yPuEw-jyeg6IwfPDaJX4-8a2r0E",
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -57,6 +65,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',    # novo
 ]
+
+MEDIA_URL = '/portfolio/'
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 ROOT_URLCONF = 'config.urls'
 
