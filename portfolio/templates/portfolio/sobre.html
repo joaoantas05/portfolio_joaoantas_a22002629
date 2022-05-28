@@ -13,8 +13,8 @@
             {% for education in educations %}
                         <div>
                             <div class="imagem_formacao">
-                                <img src="../../static/portfolio/images/{{education.imagem}}" width="300"></a>         
-                                <img src="../../static/portfolio/images/{{education.logotipo}}" class="logo" ></a>
+                                <img src="{{education.imagem.url}}" width="300"></a>
+                                <img src="{{education.logotipo.url}}" class="logo" ></a>
                             </div>
                             <h3>{{education.formacao}}</h3>
                             <h4>{{education.curso}} | {{education.periodo}}</h4>
@@ -63,11 +63,11 @@
     <h1 class="titulo_seccao">Hobbies</h1>
         <div class="desportos"> <p>Padel</p>
         {% load static %}
-            <img src="../../static/portfolio/images/padel.png">
+            <img src="{% static 'portfolio/images/padel.png' %}">
         </div>
         <div class="desportos"> <p>Voluntariado - Gestor de Turno</p>
         {% load static %}
-            <img src="../../static/portfolio/images/refood.jpeg">
+            <img src="{% static 'portfolio/images/refood.jpg' %}">
         </div>
     </div>
 {% endblock %}

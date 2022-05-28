@@ -13,7 +13,7 @@
             {% for tec in tecs %}
                 <div>
                     <h3>{{tec.acronimo}} : {{tec.nome}}</h3>
-                    <a href="{{tec.link}}"><img class = "web_logos" src="../../static/portfolio/images/{{tec.logotipo}}" width="100"></a>
+                    <a href="{{tec.link}}"><img class = "web_logos" src="{{tec.logotipo.url}}" width="100"></a>
                     <br><br>
                     <p>{{tec.descricao}}</p>
                     <br>
