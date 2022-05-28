@@ -1,5 +1,3 @@
-from multiprocessing import context
-from django.shortcuts import render
 from .models import *
 
 from django.http import HttpResponseRedirect
@@ -7,11 +5,11 @@ from django.shortcuts import render
 from django.urls import reverse
 
 from .forms import NewForm
+
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
-import datetime
-import matplotlib
+
 from matplotlib import pyplot as plt
 # Create your views here.
 
@@ -111,3 +109,26 @@ def quizz(request):
     }
     desenha_grafico_resultados()
     return render(request,'portfolio/web.html', context)
+
+def login_view(request):
+    if request.method == "POST":
+        nome_login = request.POST.get('username')
+        password_login = request.POST.get('password')
+        utilizador = authenticate(request, username=nome_login, password=password_login)
+
+        if utilizador is not None:
+            login(request, utilizador)
+            context = {'post': New.objects.all(),}
+            return render(request, 'portfolio/blog.html', context)
+        else:
+            return render(
+                request, 'portfolio/login.html',
+                {'message': "Credenciais Invalidas"}
+            )
+
+    return render(request, 'portfolio/login.html')
+
+def logout_view(request):
+    logout(request)
+    return render(request, 'portfolio/home.html')
+

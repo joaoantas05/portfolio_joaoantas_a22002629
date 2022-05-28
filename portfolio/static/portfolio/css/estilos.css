@@ -127,6 +127,15 @@ header .botao_cv a{
   font-size: 20px;
 }
 
+login{
+  background: #5f7d9c;
+  padding: 10px 30px;
+  border-radius: 5px 40px 40px 40px;
+  text-decoration: none;
+  color:white;
+  font-size: 20px;
+}
+
 .inicio .about{
   background: white;
   padding: 10px 30px;
@@ -451,8 +460,4 @@ background-image: url("../images/news_background.jpeg");
   background-size: cover;
   background-position: center ;
   color: #a1d0ff;
- }
-
- .contactos .icons{
- display: flex;
  }

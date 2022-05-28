@@ -14,4 +14,6 @@ urlpatterns = [
     path('apaga/<int:portfolio_id>', views.apaga_tarefa_view, name='apaga'),
     path('contactos', views.contactos_view, name='contactos'),
     path('quizz', views.quizz, name='quizz'),
+    path('login', views.login_view, name='login'),
+    path('logout', views.logout_view, name='logout')
 ]
