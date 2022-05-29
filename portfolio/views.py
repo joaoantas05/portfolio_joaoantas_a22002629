@@ -28,7 +28,7 @@ def projetos_view(request):
     return render(request, 'portfolio/projetos.html', context)
 
 def web_view(request):
-    context = {'noticias': Noticia.objects.all(), 'tecs': Tecnologia.objects.all(), 'labs': Lab.objects.all()}
+    context = {'noticias': Noticia.objects.all(), 'tecs': Tecnologia.objects.all(), 'tecs_usadas': Tecnologia.objects.all().filter(existente=True), 'labs': Lab.objects.all()}
     return render(request, 'portfolio/web.html', context)
 
 def blog_view(request):

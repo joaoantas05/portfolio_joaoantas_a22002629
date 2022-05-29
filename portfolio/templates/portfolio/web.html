@@ -50,12 +50,22 @@
         </div>
 
         <h2 class="titulo_seccao">Sobre este website</h2>
-        <div class="web_sobreeste">
-            {% load static %} 
-            <center><img src="{% static 'portfolio/images/web.drawio.png' %}" width="1000"></center>
+        <div class="web_tec">
+            {% for tec in tecs_usadas %}
+                <div>
+                    <h3>{{tec.acronimo}} : {{tec.nome}}</h3>
+                    <a href="{{tec.link}}"><img class = "web_logos" src="{{tec.logotipo.url}}" width="100"></a>
+                    <br><br>
+                    <p>{{tec.descricao}}</p>
+                    <br>
+                    <p><b>Criador: </b>{{tec.criador}}</p>
+                    <p><b>Ano de criação: </b>{{tec.ano}}</p>
+                </div>
+            {% endfor %}
         </div>
 
     </div>
+
         <h2 class="titulo_seccao">Quizz</h2>
         <form method="POST" action="quizz">
             {% csrf_token %}

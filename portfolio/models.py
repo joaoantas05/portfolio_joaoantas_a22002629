@@ -28,6 +28,7 @@ class Tecnologia(models.Model):
     logotipo = models.ImageField(upload_to="static/portfolio/images")
     link = models.CharField(max_length=500)
     descricao = models.TextField(max_length=1000)
+    existente = models.BooleanField(default=False)
 
     def __str__(self):
           return self.nome[:50]
