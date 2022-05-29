@@ -240,9 +240,11 @@ font-size: 18px;
 /* Competências */
 
 .competencias{
-  float: center;
+  text-align: center;
+  display: block;
+  margin: 5px auto;
   width: 400px;   height: auto;
-  padding: 25px;  margin: 10px;
+  padding: 25px;
   background-color: white;  
   border-radius: 10px; /* arredonda os cantos */
   box-shadow: 5px 5px 15px grey;
@@ -251,9 +253,11 @@ font-size: 18px;
 /* Línguas */
 
 .linguas{
-  float: center;
+  text-align: center;
+  display: block;
+  margin: 5px auto;
   width: 400px;   height: auto;
-  padding: 25px;  margin: 10px;
+  padding: 25px;
   background-color: white;  
   border-radius: 10px; /* arredonda os cantos */
   box-shadow: 5px 5px 15px grey;
@@ -262,9 +266,11 @@ font-size: 18px;
 /* Hobbies */
 
 .desportos{
-  float: center;
+  text-align: center;
+  display: block;
+  margin: 5px auto;
   width: 400px;   height: auto;
-  padding: 25px;  margin: 10px;
+  padding: 25px;
   background-color: white;  
   border-radius: 10px; /* arredonda os cantos */
   box-shadow: 5px 5px 15px grey;
@@ -460,7 +466,7 @@ background-image: url("../images/news_background.jpeg");
                                                                     /* Contactos */
 
  .contactos{
-  padding: 15% 10% 5% 10%;
+  padding: 15% 10% 10% 10%;
   font-size: 20px;
   text-align: center;
   background-image: url("../images/contactos_background.jpeg");
