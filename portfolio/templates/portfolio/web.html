@@ -65,7 +65,7 @@
         </div>
 
     </div>
-
+    <div class="web_quizz">
         <h2 class="titulo_seccao">Quizz</h2>
         <form method="POST" action="quizz">
             {% csrf_token %}
@@ -91,4 +91,5 @@
         </form>
         {% load static %} 
         <img src="{% static 'portfolio/images/grafico.png' %}">
+    </div>
 {% endblock %}

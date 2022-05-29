@@ -18,6 +18,10 @@ header nav a{
   margin-right: 1vw;
 }
 
+header nav a:hover{
+  font-weight: bold;
+}
+
 header .name{
   font-size: 30px;
   font-weight: bold;
@@ -227,6 +231,10 @@ font-size: 18px;
 
 .imagem_formacao{
   position: relative;
+}
+
+.imagem_formacao img{
+ border-radius: 10px;
 }
 
 /* Competências */
@@ -452,12 +460,16 @@ background-image: url("../images/news_background.jpeg");
                                                                     /* Contactos */
 
  .contactos{
-  height: 100vh;
-  padding: 20px;
+  padding: 15% 10% 5% 10%;
   font-size: 20px;
+  text-align: center;
   background-image: url("../images/contactos_background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center ;
   color: #a1d0ff;
  }
+
+.icons{
+ margin-top: 5%;
+}
