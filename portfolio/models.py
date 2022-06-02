@@ -111,6 +111,7 @@ class TFC(models.Model):
     ano = models.IntegerField()
     autor = models.CharField(max_length=70)
     orientador = models.CharField(max_length=70)
+    imagem = models.ImageField(upload_to="static/portfolio/images",default='1')
 
     def __str__(self):
           return self.titulo[:50]
