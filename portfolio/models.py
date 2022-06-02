@@ -109,8 +109,8 @@ class TFC(models.Model):
     linkYoutube = models.CharField(max_length=1000)
     linkRelatorio = models.CharField(max_length=1000)
     ano = models.IntegerField()
+    orientador = models.ManyToManyField(Person, related_name='orientador')
     autor = models.CharField(max_length=70)
-    orientador = models.CharField(max_length=70)
     imagem = models.ImageField(upload_to="static/portfolio/images",default='1')
 
     def __str__(self):

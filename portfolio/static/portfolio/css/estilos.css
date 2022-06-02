@@ -274,7 +274,8 @@ font-size: 18px;
   background-color: white;  
   border-radius: 10px; /* arredonda os cantos */
   box-shadow: 5px 5px 15px grey;
-}                                                          /* Projetos */
+}
+                                                             /* Projetos */
 
 .projects{
   display: flex;
@@ -306,6 +307,33 @@ font-size: 18px;
 .after-box{
   clear: left;
   background-color: skyblue;
+}
+                                                                    /* TFC */
+.tfc{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 25px 100px;
+  text-align: center;
+  font-size: 19px;
+  background-image: url("../images/code.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+}
+
+.tfc div img{
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+.tfc div{
+  float: left;
+  width: 400px;   height: auto;
+  padding: 25px;  margin: 10px;
+  background-color: white;
+  border-radius: 10px; /* arredonda os cantos */
+  box-shadow: 5px 5px 15px grey;
 }
 
                                                                     /* Web */
