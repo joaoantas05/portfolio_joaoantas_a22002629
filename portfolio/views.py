@@ -24,7 +24,7 @@ def sobre_view(request):
     return render(request, 'portfolio/sobre.html', context)
 
 def projetos_view(request):
-    context = {'projetos': Project.objects.all(), 'tfcs' : TFC.objects.all()}
+    context = {'projetos': Project.objects.all(), 'tfcs': TFC.objects.all()}
     return render(request, 'portfolio/projetos.html', context)
 
 def web_view(request):
