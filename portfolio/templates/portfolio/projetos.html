@@ -32,17 +32,19 @@
         {% for tfc in tfcs %}
             <div>
                 <h3>{{tfc.titulo}}</h3>
+                <br>
                 <p><b>Autor: </b>{{tfc.autor}}</p>
-
                 {% for orientador in tfc.orientador.all %}
                     <p><b>Orientador: </b>{{orientador.nome}}</p>
                 {% endfor %}
                 <button><a href="{{tfc.linkGitHub}}"><img src="{{tfc.imagem.url}}" width="200"></a></button>
                 <br><br>
-                <a href="{{tfc.linkYoutube}}"> LinkYoutube:</a>
+                <a href="{{tfc.linkYoutube}}"> LinkYoutube</a>
                 <br>
-                <a href="{{tfc.linkRelatorio}}"> LinkRelatorio:</a>
+                <a href="{{tfc.linkRelatorio}}"> LinkRelatorio</a>
+                <br>
                 <p>{{tfc.sumario}}</p>
+                <br>
                 <p><b>Ano: </b>{{tfc.ano}}</p>
             </div>
         {% endfor %}
