@@ -33,10 +33,15 @@
             <div>
                 <h3>{{tfc.titulo}}</h3>
                 <p><b>Autor: </b>{{tfc.autor}}</p>
-                <p><b>Orientador: </b>{{tfc.orientador}}</p>
+
+                {% for orientador in tfc.orientador.all %}
+                    <p><b>Orientador: </b>{{orientador.nome}}</p>
+                {% endfor %}
                 <button><a href="{{tfc.linkGitHub}}"><img src="{{tfc.imagem.url}}" width="200"></a></button>
-                <a href="{{tfc.linkYoutube}}"></a>
-                <a href="{{tfc.linkRelatorio}}"></a>
+                <br><br>
+                <a href="{{tfc.linkYoutube}}"> LinkYoutube:</a>
+                <br>
+                <a href="{{tfc.linkRelatorio}}"> LinkRelatorio:</a>
                 <p>{{tfc.sumario}}</p>
                 <p><b>Ano: </b>{{tfc.ano}}</p>
             </div>
