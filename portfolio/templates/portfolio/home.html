@@ -42,4 +42,25 @@
         </article>
     </div>
 
+    <div class="api">
+        <p id="tempoMin"> Temperatura Mínima: </p>
+        <p id="tempoMax"> Temperatura Máxima: </p>
+        <p id="classWindSpeed"> Velocidade do Vento: </p>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      fetch('https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1110600.json')// envia GET request ao URL
+      .then(response => response.json()) // Põe a resposta no formato json
+      .then(data =>{
+        let tempoMin = data.data[0].tMin
+        document.querySelector('#tempoMin').append(tempoMin);
+        let tempoMax = data.data[0].tMax
+        document.querySelector('#tempoMax').append(tempoMax);
+        let classWindSpeed = data.data[0].classWindSpeed
+        document.querySelector('#classWindSpeed').append(classWindSpeed);
+      } ); // Põe os dados na consola
+     });
+    </script>
+
 {% endblock %}
