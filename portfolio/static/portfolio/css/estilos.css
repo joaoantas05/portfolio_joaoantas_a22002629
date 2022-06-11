@@ -3,7 +3,8 @@ body{
 }
 
 *{
-  margin: 0%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html{
@@ -192,7 +193,59 @@ header .login a{
   background-color: white;
   border-radius: 10px; /* arredonda os cantos */
   box-shadow: 5px 5px 15px grey;
-}                                         /* Sobre mim*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+        .nova_api {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 20px 30px;
+            height: 500px;
+            width: 100%;
+            background-image: url("../images/carbon.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .nova_api > div {
+            max-width: 400px;
+            font-family: 'Open Sans', sans-serif;
+            padding: 30px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+        }
+
+        .nova_api > div > p {
+            font-weight: lighter;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .nova_api > div > input {
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            border-radius: 5px;
+            margin: 20px auto 15px auto;
+        }
+
+        .nova_api > div > button {
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 25px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            border-radius: 5px;
+        }
+
+                               /* Sobre mim*/
 
 /* Licênciatura */
 

@@ -63,6 +63,32 @@
         document.querySelector('#classWindSpeed').append(classWindSpeed);
       } ); // Põe os dados na consola
      });
+
+     function carbon(distance){
+            const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': '6287c1cb65msh3b631dd5192f66bp1a0bcajsn97a0456e26b4',
+                'X-RapidAPI-Host': 'carbonfootprint1.p.rapidapi.com'
+            }
+            };
+
+            fetch('https://carbonfootprint1.p.rapidapi.com/CarbonFootprintFromCarTravel?distance='+String(distance)+'&vehicle=SmallDieselCar', options)
+                .then(response => response.json())
+                .then(data=>
+                    {
+                      document.getElementById('result').innerHTML = String("Pegada de corbono por distância percorrida por um automóvel" + " - ") + String(data.carbonEquivalent) + String("Kg");
+                    }
+                   );
+        }
     </script>
+
+    <div class="nova_api">
+        <div>
+            <p id="result">Pegada de corbono por distância percorrida por um automóvel.</p>
+            <input type="text" id="distancia">
+            <button onclick="carbon(document.getElementById('distancia').value)">calcula</button>
+        </div>
+    </div>
 
 {% endblock %}
