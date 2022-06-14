@@ -8,18 +8,16 @@
 
 {% block main %}
     <div class="contactos">
-        <p><b>Nome:</b>  João Miguel Isidro Antas</p>
-        <p><b>Localização:</b> Lisboa - Portugal</p>
-        <p><b>Email Institucional:</b> a22002629@alunos.ulht.pt</p>
-        <p><b>Email Pessoal:</b> joaoisidroantas@gmail.com</p>
-        <p><b>Telemóvel:</b> +351 960 301 870</p>
+        <div class="contacto_nome"><p><b>Nome:</b>  João Miguel Isidro Antas</p></div>
+        <div class="contacto_loc"><p><b>Localização:</b> Lisboa - Portugal</p></div>
+        <div class="contacto_email1"><p><b>Email Institucional:</b> a22002629@alunos.ulht.pt</p></div>
+        <div class="contacto_email2"><p><b>Email Pessoal:</b> joaoisidroantas@gmail.com</p></div>
+        <div class="contacto_tel"><p><b>Telemóvel:</b> +351 960 301 870</p></div>
 
-        <section class="icons">
-            <p>
+        <div class="icons">
                 <a href="https://www.linkedin.com/in/joaoantas05/"> {% load static %} <img src="{% static 'portfolio/images/linkedin.png' %}" width="35"></a>
                 <a href="https://github.com/joaoantas22002629/pw-labs-joaoantas-a22002629"> {% load static %} <img src="{% static 'portfolio/images/github.png' %}" width="35"></a>
                 <a href="mailto:joaoisidroantas@gmail.com"> {% load static %} <img src="{% static 'portfolio/images/gmail.png' %}" width="35"></a>
-            </p>
-        </section>
+        </div>
     </div>
 {% endblock %}
