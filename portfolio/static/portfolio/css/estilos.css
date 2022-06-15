@@ -627,3 +627,10 @@ margin-top: 30px;
 .icons > a{
 margin: 0 10px;
 }
+
+.drawio{
+display: flex;
+justify-content: center;
+background-image: url("../images/diagrama.png");
+padding: 20px 20px 40px 190px
+}
