@@ -288,6 +288,7 @@ font-size: 18px;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  background-image: url("../images/educacao.png");
 }
 
 .formacao > div{
