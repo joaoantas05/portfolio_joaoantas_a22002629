@@ -345,6 +345,12 @@ font-size: 18px;
 
 /* Hobbies */
 
+.linguas1{
+background-image: url("../images/linguas.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
 .desportos{
   text-align: center;
   display: block;
@@ -354,6 +360,13 @@ font-size: 18px;
   background-color: white;  
   border-radius: 10px; /* arredonda os cantos */
   box-shadow: 5px 5px 15px grey;
+}
+
+.hobbies{
+ background-image: url("../images/hobbies.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
 }
                                                              /* Projetos */
 
@@ -367,7 +380,7 @@ font-size: 18px;
   background-image: url("../images/code.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center ;
+  background-position: center;
 }
 
 .projects div img{
